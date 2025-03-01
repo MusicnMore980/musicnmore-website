@@ -7,15 +7,23 @@
     <style>
         body {
             background-color: #181818;
-            color: black;
+            color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
         }
         .music-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
+            margin-left: 20px;
         }
         .song {
             background: #282828;
@@ -30,39 +38,42 @@
         audio {
             width: 200px;
         }
+        h1 {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <h1>YouTube Music</h1>
-    <div class="music-container">
-        <div class="song">
-            <p>Blah - Slowed</p>
-            <audio controls>
-                <source src="blah-slowed.mp3" type="audio/mpeg">
-            </audio>
+    <div class="container">
+        <div>
+            <h1>Hi there, I'm Aaditya</h1>
         </div>
-        
-        <div class="song">
-            <p>Beta Z</p>
-            <audio controls>
-                <source src="beta-z.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="song">
-            <p>Skibidi</p>
-            <audio controls>
-                <source src="skibidi.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="song">
-            <p>Thick of It</p>
-            <audio controls>
-                <source src="thick of it.mp3" type="audio/mpeg">
-            </audio>
+        <div class="music-container">
+            <div class="song">
+                <p>Blah - Slowed</p>
+                <audio controls>
+                    <source src="blah-slowed.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="song">
+                <p>Beta Z</p>
+                <audio controls>
+                    <source src="beta-z.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="song">
+                <p>Skibidi</p>
+                <audio controls>
+                    <source src="skibidi.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="song">
+                <p>Thick of It</p>
+                <audio controls>
+                    <source src="thick of it.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
