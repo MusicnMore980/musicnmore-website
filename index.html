@@ -2,27 +2,81 @@ Free Music and More. Down Here You Will Find Music Files And Images of Anything 
 
                              	Created By AK47
 
-<audio controls>
-  <source src="blah-slowed.mp3" type="audio/mpeg">
-</audio>
-
-	
 <!DOCTYPE html>
-<html>
-<body style="background-color:powderblue;">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music Clone</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .music-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .song {
+            background: #282828;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .song img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+        }
+        audio {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Music</h1>
+    <div class="music-container">
+        <div class="song">
+            <img src="song1.jpg" alt="Song 1 Cover">
+            <div>
+                <p>Blah - Slowed</p>
+                <audio controls>
+                    <source src="blah-slowed.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        
+        <div class="song">
+            <img src="song2.jpg" alt="Song 2 Cover">
+            <div>
+                <p>Beta Z</p>
+                <audio controls>
+                    <source src="beta-z.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        
+        <div class="song">
+            <img src="song3.jpg" alt="Song 3 Cover">
+            <div>
+                <p>Skibidi</p>
+                <audio controls>
+                    <source src="skibidi.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
-
-<audio controls>
-   <source src="beta-z.mp3" type="audio/mpeg">
-   Your browser does not support the audio element.
-</audio>
- 
-<audio controls>
-   <source src="skibidi.mp3" type="audio/mpeg">
-   Your browser does not support the sudio element.
-</audio>
 
 
 
