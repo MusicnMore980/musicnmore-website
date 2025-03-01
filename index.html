@@ -10,14 +10,15 @@
             padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            background: url('blue.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #3399FF;
+            color: white;
+        }
+        .container {
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
         }
         h1 {
             font-size: 3rem;
@@ -48,24 +49,69 @@
             text-decoration: none;
             font-size: 1rem;
         }
+        .arrow {
+            position: absolute;
+            bottom: 20px;
+            font-size: 2rem;
+            animation: blink 1s infinite;
+            cursor: pointer;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .about-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            padding: 20px;
+            color: white;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="nav">
-        <a href="#">About Me</a>
+        <a href="#about">About Me</a>
         <a href="#">Experience</a>
         <a href="#">Research</a>
         <a href="#">Projects</a>
         <a href="#">Awards</a>
         <a href="#">Resume</a>
     </div>
-    <h1>Hi! I'm Aaditya</h1>
-    <p>I'm a student at Webb Bridge Middle School as a 6th grader</p>
-    <div class="social-icons">
-        <a href="#">&#9993;</a> <!-- Email Icon -->
-        <a href="#">&#128187;</a> <!-- GitHub Icon -->
-        <a href="#">&#128100;</a> <!-- LinkedIn Icon -->
-        <a href="#">&#128038;</a> <!-- Twitter Icon -->
+    <div class="container">
+        <h1>Hi! I'm Aaditya</h1>
+        <p>I'm a student at Webb Bridge Middle School as a 6th grader</p>
+        <div class="social-icons">
+            <a href="mailto:kishoreduzak@gmail.com">&#9993;</a> <!-- Email Icon -->
+            <a href="https://github.com/MusicnMore980" target="_blank">&#128187;</a> <!-- GitHub Icon -->
+        </div>
+        <div class="arrow" onclick="scrollToAbout()">&#x2193;</div>
     </div>
+    <div id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Hi! My name is Aaditya Kishore, and I’m a 6th grader at Webb Bridge Middle School. I’m in a lot of advanced classes, especially in math, which is one of my favorite subjects. I love problem-solving and challenging myself with new concepts.</p>
+        <p>One of my biggest passions is technology. I enjoy coding and creating different projects, whether it’s writing programs, designing simple games, or experimenting with new coding languages. I love learning about how technology works and how it shapes the world around us.</p>
+        <p>In addition to my love for coding, I also play the clarinet. Music is a big part of my life, and I enjoy practicing and improving my skills. Playing in the school band is a lot of fun, and I love making music with my friends.</p>
+        <p>Speaking of friends, I have a lot of them! I enjoy hanging out, working on group projects, and just having fun. I try my best to get good grades, usually earning A’s and B’s in all my subjects. I always stay curious and enthusiastic about learning new things.</p>
+        <p>Whether it’s solving a tough math problem, coding a cool project, or playing music, I’m always excited to take on new challenges and improve my skills!</p>
+    </div>
+    <script>
+        function scrollToAbout() {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
