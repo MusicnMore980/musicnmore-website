@@ -3,65 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Music Clone</title>
+    <title>Personal Portfolio</title>
     <style>
         body {
-            background-color: #181818;
-            color: white; /* Changed from black to white */
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-        }
-        .music-container {
+            background: url('blue.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            color: white;
         }
-        .song {
-            background: #282828;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 10px;
-            width: 300px;
+        h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .social-icons {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            gap: 15px;
+            justify-content: center;
         }
-        audio {
-            width: 200px;
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <h1>YouTube Music</h1>
-    <div class="music-container">
-        <div class="song">
-            <p>Blah - Slowed</p>
-            <audio controls>
-                <source src="blah-slowed.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="song">
-            <p>Beta Z</p>
-            <audio controls>
-                <source src="beta-z.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="song">
-            <p>Skibidi</p>
-            <audio controls>
-                <source src="skibidi.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        
-        <div class="song">
-            <p>Thick of It</p>
-            <audio controls>
-                <source src="thick-of-it.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+    <div class="nav">
+        <a href="#">About Me</a>
+        <a href="#">Experience</a>
+        <a href="#">Research</a>
+        <a href="#">Projects</a>
+        <a href="#">Awards</a>
+        <a href="#">Resume</a>
+    </div>
+    <h1>Hi! I'm Aaditya</h1>
+    <p>I'm a student at Webb Bridge Middle School as a 6th grader</p>
+    <div class="social-icons">
+        <a href="#">&#9993;</a> <!-- Email Icon -->
+        <a href="#">&#128187;</a> <!-- GitHub Icon -->
+        <a href="#">&#128100;</a> <!-- LinkedIn Icon -->
+        <a href="#">&#128038;</a> <!-- Twitter Icon -->
     </div>
 </body>
 </html>
